@@ -96,3 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".next-arrow").addEventListener("click", nextSlide);
   document.querySelector(".prev-arrow").addEventListener("click", prevSlide);
 });
+
+
+//toggle bar
+function toggleNavbar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+}
