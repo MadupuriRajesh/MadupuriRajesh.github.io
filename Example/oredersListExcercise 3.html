@@ -1,0 +1,106 @@
+<script>
+    // Sample data: List of orders
+const orders = [
+  { id: 1, customer: "Alice", items: 3, total: 45, status: "completed" },
+  { id: 2, customer: "Bob", items: 2, total: 25, status: "pending" },
+  { id: 3, customer: "Charlie", items: 5, total: 75, status: "completed" },
+  { id: 4, customer: "Dave", items: 1, total: 10, status: "cancelled" },
+  { id: 5, customer: "Eve", items: 4, total: 60, status: "completed" },
+  { id: 6, customer: "Frank", items: 6, total: 90, status: "pending" },
+  { id: 6, customer: "Frank", items: 6, total: 90, status: "pending" },
+];
+
+// Variables to track order metrics
+let completedOrders = [];
+let pendingOrders = [];
+let cancelledOrders = [];
+let totalRevenue = 0;
+let largeOrders = []; // Orders with more than 3 items
+
+// 1] Categorize orders based on their status
+// 2] Add to revenue if order is completed
+// 3] What all conditionals can be used
+// 4] Convert to all conditionals
+// 5] Use all types of for loops
+
+
+// Loop through all orders
+// for loop
+for (let i = 0; i < orders.length; i++) {
+  const order = orders[i]; // Current order
+
+  if (order.status === "completed") {
+  completedOrders.push(order);
+  } else if (order.status === "pending") {
+    pendingOrders.push(order);
+  } else{
+    cancelledOrders.push(order);
+  }
+  
+  if (order.status === "completed") {
+    totalRevenue += order.total;
+  }
+
+  // How to identify large orders?
+  if (order["items"]>3) {
+    largeOrders.push(order);
+  }
+}
+
+//forEach
+orders.forEach(order => {
+
+  switch (order.status) {
+    case "completed":
+      completedOrders.push(order);
+      totalRevenue += order.total;
+      break;
+    case "pending":
+      pendingOrders.push(order);
+      break;
+    case "cancelled":
+      cancelledOrders.push(order);
+      break;
+    default:
+      console.log("Unknown order status");
+  }
+
+  if (order.items > 3) {
+    largeOrders.push(order);
+  }
+});
+
+//for...of
+for (const order of orders) {
+  if (order.status === "completed") {
+    completedOrders.push(order);
+    totalRevenue += order.total;
+  } else if (order.status === "pending") {
+    pendingOrders.push(order);
+  } else {
+    cancelledOrders.push(order);
+  }
+
+  if (order.items > 3) {
+    largeOrders.push(order);
+  }
+}
+
+// Output results
+console.log("Completed Orders:", completedOrders);
+console.log("Pending Orders:", pendingOrders);
+console.log("Cancelled Orders:", cancelledOrders);
+console.log("Large Orders (more than 3 items):", largeOrders);
+console.log("Total Revenue from Completed Orders:", totalRevenue);
+
+// Nested loops example: Check for duplicate orders
+console.log("\nDuplicate Orders Check:");
+for (let i = 0; i < orders.length; i++) {
+  for (let j = i + 1; j < orders.length; j++) {
+    if (orders[i].id === orders[j].id) {
+      console.log(`------- order found: ID ${orders[i].id}`);
+    }
+  }
+}
+
+</script>
