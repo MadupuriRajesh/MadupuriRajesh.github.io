@@ -1,3 +1,12 @@
+window.dataLayer = { 
+  pageName: "Rajesh Website", 
+  userType: "Guest",
+  userID:"369369",
+};
+
+console.log(window.dataLayer);
+
+
 //color trasition to the header
 
 document.addEventListener("scroll", function () {
