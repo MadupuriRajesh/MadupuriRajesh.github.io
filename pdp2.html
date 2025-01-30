@@ -7,6 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="pdpstyle.css">
     <script src="script.js"></script>
+    <script>
+      !(function (e,a,n,t) {
+        if (a) return;
+        var i=e.head;
+        if(i){
+          var o=e.createElement("style");
+          (o.id="alloy-prehiding"),
+          i.appendChild(o),
+          setTimeout(function(){
+            o.parentNode && o.parentNode.removeChild(o);
+          },t);
+        }
+      })(
+        document,
+        document.location.href.indexOf("adobe_authoring_enabled")!==-1,
+        "body {opacity:0 !important}",
+        3000
+      );
+    </script>
+    <script src="https://assets.adobedtm.com/01296dd00565/71071a7d0a72/launch-e963f057fd63-development.min.js" async></script>
 </head>
 <body>
     <header>
