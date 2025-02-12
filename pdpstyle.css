@@ -258,6 +258,7 @@ form select {
   width: 50px;
   text-align: center;
   margin: 0 5px;
+  color: #000;
 }
 
 .add-to-cart {
