@@ -118,112 +118,112 @@ function toggleNavbar() {
 
 // Product data
 const products = {
-  1: {
+  a1b1c: {
     title: "Esprit Ruffle Shirt",
     price: "$16.64",
     description: "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula.",
     image: "images/product-01.jpg",
     category: "women",
   },
-  2: {
+  a2b2c: {
     title: "Herschel Supply",
     price: "$35.31",
     description: "Mauris consequat ornare feugiat.",
     image: "images/product-02.jpg",
     category: "women",
   },
-  3: {
+  a3b3c: {
     title: "Only Check Trouser",
     price: "$25.50",
     description: "Elegant trousers with a modern check pattern.",
     image: "images/product-03.jpg",
     category: "men",
   },
-  4: {
+  a4b4c: {
     title: "Classic Trench Coat",
     price: "$75.00",
     description: "Timeless and versatile, this trench coat is a wardrobe essential.",
     image: "images/product-04.jpg",
     category: "women",
   },
-  5: {
+  a5b5c: {
     title: "Front Pocket Jumper",
     price: "$34.75",
     description: "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula.",
     image: "images/product-05.jpg",
     category: "women",
   },
-  6: {
+  a6b6c: {
     title: "Vintage Inspired Classic",
     price: "$93.20",
     description: "Mauris consequat ornare feugiat.",
     image: "images/product-06.jpg",
     category: "watches",
   },
-  7: {
+  a7b7c: {
     title: "Only Check Trouser",
     price: "$25.50",
     description: "Elegant trousers with a modern check pattern.",
     image: "images/product-07.jpg",
     category: "women",
   },
-  8: {
+  a8b8c: {
     title: "Shirt in Stretch Column",
     price: "$52.66",
     description: "Timeless and versatile, this trench coat is a wardrobe essential.",
     image: "images/product-08.jpg",
     category: "women",
   },
-  9: {
+  a9b9c: {
     title: "Converse All Star Hi Plimsolls",
     price: "$75.00",
     description: "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula.",
     image: "images/product-09.jpg",
     category: "shoes",
   },
-  10: {
+  a10b10c: {
     title: "Femme T-Shirt in Stripo",
     price: "$25.85",
     description: "Mauris consequat ornare feugiat.",
     image: "images/product-10.jpg",
     category: "women",
   },
-  11: {
+  a11b11c: {
     title: "Hershell supply men",
     price: "$63.16",
     description: "Elegant trousers with a modern check pattern.",
     image: "images/product-11.jpg",
     category: "men",
   },
-  12: {
+  a12b12c: {
     title: "Hershell supply watch",
     price: "$63.15",
     description: "Timeless and versatile, this trench coat is a wardrobe essential.",
     image: "images/product-12.jpg",
     category: "watches",
   },
-  13: {
+  a13b13c: {
     title: "T-shirt with Sleeve",
     price: "$18.49",
     description: "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula.",
     image: "images/product-13.jpg",
     category: "women",
   },
-  14: {
+  a14b14c: {
     title: "Pretty Little Thing",
     price: "$54.79",
     description: "Mauris consequat ornare feugiat.",
     image: "images/product-14.jpg",
     category: "women",
   },
-  15: {
+  a15b15c: {
     title: "Mini Silver Mesh Watch",
     price: "$86.85",
     description: "Elegant trousers with a modern check pattern.",
     image: "images/product-15.jpg",
     category: "watches",
   },
-  16: {
+  a16b16c: {
     title: "Square Neck Back",
     price: "$29.64",
     description: "Timeless and versatile, this trench coat is a wardrobe essential.",
