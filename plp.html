@@ -6,7 +6,7 @@
     <title>Ganesh Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="plpstyle.css">
-    <script src="script.js"></script>
+    <script src="plpscript.js" defer></script>
     <script>
       window.dataLayer = { 
         pageName: "shop",
@@ -90,12 +90,12 @@
 
     <header class="header2">  
         <nav class="nav-links">
-          <a href="plp.html">All Products</a>
-          <a href="#">Women</a>
-          <a href="#">Men</a>
-          <a href="#">Bag</a>
-          <a href="#">Shoes</a>
-          <a href="#">Watches</a>
+          <a href="#" data-category="all">All Products</a>
+          <a href="#" data-category="women">Women</a>
+          <a href="#" data-category="men">Men</a>
+          <a href="#" data-category="bag">Bag</a>
+          <a href="#" data-category="shoes">Shoes</a>
+          <a href="#" data-category="watches">Watches</a>
         </nav>
     
         <div class="icons1">
@@ -113,255 +113,7 @@
     </header>
 
     <div class="product-grid">
-      <div class="product-card">
-        <a href="pdp.html?id=1">
-          <img src="images/product-01.jpg" alt="Esprit Ruffle Shirt" class="product-image" />
-          <div class="product-info">
-            <div class="title-row">
-              <span class="product-title">Esprit Ruffle Shirt</span>
-              <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                </svg>
-              </span>
-            </div>
-            <span class="product-price">$16.64</span>
-          </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=2">
-          <img src="images/product-02.jpg" alt="Herschel Supply" class="product-image" />
-          <div class="product-info">
-            <div class="title-row">
-              <span class="product-title">Herschel Supply</span>
-              <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg></span>
-            </div>
-            <span class="product-price">$35.31</span>
-          </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=3">
-          <img src="images/product-03.jpg" alt="Only Check Trouser" class="product-image" />
-          <div class="product-info">
-            <div class="title-row">
-              <span class="product-title">Only Check Trouser</span>
-              <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg></span>
-            </div>
-            <span class="product-price">$25.50</span>
-          </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=4">
-          <img src="images/product-04.jpg" alt="Classic Trench Coat" class="product-image" />
-          <div class="product-info">
-            <div class="title-row">
-              <span class="product-title">Classic Trench Coat</span>
-              <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg></span>
-            </div>
-            <span class="product-price">$75.00</span>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <a href="pdp.html?id=5">
-        <img src="images/product-05.jpg" alt="Front Pocket Jumper" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Front Pocket Jumper</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg>
-            </span>
-          </div>
-          <span class="product-price">$34.75</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=6">
-        <img src="images/product-06.jpg" alt="Vintage Inspired Classic" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Vintage Inspired Classic</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$93.20</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=7">
-        <img src="images/product-07.jpg" alt="Only Check Trouser" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Only Check Trouser</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$25.50</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=8">
-        <img src="images/product-08.jpg" alt="Shirt in Stretch Column" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Shirt in Stretch Column</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$52.66</span>
-        </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <a href="pdp.html?id=9">
-        <img src="images/product-09.jpg" alt="Converse All Star Hi Plimsolls" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Converse All Star Hi Plimsolls</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg>
-            </span>
-          </div>
-          <span class="product-price">$75.00</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=10">
-        <img src="images/product-10.jpg" alt="Femme T-Shirt in Stripo" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Femme T-Shirt in Stripo</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$25.85</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=11">
-        <img src="images/product-11.jpg" alt="Hershell supply men" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Hershell supply men</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$63.16</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=12">
-        <img src="images/product-12.jpg" alt="Hershell supply watch" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Hershell supply watch</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$63.15</span>
-        </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <a href="pdp.html?id=13">
-        <img src="images/product-13.jpg" alt="T-shirt with Sleeve" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">T-shirt with Sleeve</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-              </svg>
-            </span>
-          </div>
-          <span class="product-price">$18.49</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=14">
-        <img src="images/product-14.jpg" alt="Pretty Little Thing" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Pretty Little Thing</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$54.79</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=15">
-        <img src="images/product-15.jpg" alt="Mini Silver Mesh Watch" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Mini Silver Mesh Watch</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$86.85</span>
-        </div>
-        </a>
-      </div>
-    
-      <div class="product-card">
-        <a href="pdp.html?id=16">
-        <img src="images/product-16.jpg" alt="Square Neck Back" class="product-image" />
-        <div class="product-info">
-          <div class="title-row">
-            <span class="product-title">Square Neck Back</span>
-            <span class="heart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-            </svg></span>
-          </div>
-          <span class="product-price">$29.64</span>
-        </div>
-        </a>
-      </div>
+      <!-- This grid will be dynamically populated by JavaScript -->
     </div>
 
     <div class="center-container">
