@@ -8,19 +8,9 @@
     <link rel="stylesheet" href="plpstyle.css">
     <script src="plpscript.js" defer></script>
     <script>
-      function getCategoryId() {
-        const urlPath = window.location.pathname.toLowerCase();
-        if (urlPath.includes("men")) {
-          return "men";
-        } else if (urlPath.includes("women")) {
-          return "women";
-        } else if (urlPath.includes("shoes")) {
-          return "shoes";
-        } else if (urlPath.includes("watches")) {
-          return "watches";
-        } else {
-          return "unknown"; // Default or fallback value
-        }
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param); // Return the value of the specified query parameter
       }
       window.dataLayer = { 
         pageName: "shop",
@@ -30,7 +20,7 @@
         PageTitle:document.title,
         timestamp:new Date().toString(),
         pageUrl:window.location.href,
-        categoryId: getCategoryId()
+        categoryId: getQueryParam('category') || "unknown"
       };
     </script>
     <script>
