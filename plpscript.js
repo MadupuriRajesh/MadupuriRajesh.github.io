@@ -124,10 +124,6 @@ const productGrid = document.querySelector('.product-grid');
 function renderProducts(category) {
   console.log(category);
   productGrid.innerHTML = ''; // Clear the grid
-
-  window.dataLayer = window.dataLayer || {};
-  window.dataLayer.categoryId = category;
-
   
   // Loop through products and filter by category
   Object.entries(products).forEach(([id, product]) => {
@@ -155,20 +151,41 @@ function renderProducts(category) {
   });
 }
 
+// Function to update the URL
+function updateURL(category) {
+  const url = `plp.html?category=${category}`;
+  history.pushState({ category }, '', url); // Update URL without reloading
+}
+
+// Function to handle navigation and rendering
+function handleNavigation(category) {
+  // Highlight the active category link
+  navLinks.forEach(link => link.classList.remove('active'));
+  document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+  // Render products for the selected category
+  renderProducts(category);
+
+  // Update the browser URL
+  updateURL(category);
+}
+
 // Event listener for category links
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default link behavior
     const category = link.getAttribute('data-category'); // Get category from data attribute
-
-    // Set active class on the clicked link
-    navLinks.forEach(nav => nav.classList.remove('active'));
-    link.classList.add('active');
-
-    // Render products and update the dataLayer
-    renderProducts(category);
+    handleNavigation(category);
   });
 });
 
+// Handle browser back/forward navigation
+window.addEventListener('popstate', (e) => {
+  const category = e.state?.category || 'all'; // Default to 'all' if no state
+  handleNavigation(category);
+});
+
 // Initial rendering of all products
-renderProducts('all');
+const params = new URLSearchParams(window.location.search);
+const initialCategory = params.get('category') || 'all';
+handleNavigation(initialCategory);
