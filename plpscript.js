@@ -124,6 +124,10 @@ const productGrid = document.querySelector('.product-grid');
 function renderProducts(category) {
   console.log(category);
   productGrid.innerHTML = ''; // Clear the grid
+
+  window.dataLayer = window.dataLayer || {};
+  window.dataLayer.categoryId = category;
+
   
   // Loop through products and filter by category
   Object.entries(products).forEach(([id, product]) => {
@@ -156,7 +160,13 @@ navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default link behavior
     const category = link.getAttribute('data-category'); // Get category from data attribute
-    renderProducts(category); // Render filtered products
+
+    // Set active class on the clicked link
+    navLinks.forEach(nav => nav.classList.remove('active'));
+    link.classList.add('active');
+
+    // Render products and update the dataLayer
+    renderProducts(category);
   });
 });
 
